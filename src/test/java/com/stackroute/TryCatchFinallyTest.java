@@ -28,4 +28,11 @@ public class TryCatchFinallyTest {
         String testStr = "Error Caught in Catch Block\n"+"Now in Finally Block\n";
         assertEquals("check your main",testStr,output.toString());
     }
+    @Test
+    public void main_PrintErrorMsgInCatchBlockGoToFinallyFailure() {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(output));
+        String testStr = "Error Caught in Catch Block\n"+"Now in Finally Block Not there\n";
+        assertNotEquals("check your main",testStr,output.toString());
+    }
 }
