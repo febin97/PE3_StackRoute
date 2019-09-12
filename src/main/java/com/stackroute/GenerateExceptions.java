@@ -7,6 +7,6 @@ public class GenerateExceptions {
     public void genIndexOutOfBoundsException(){
     }
     public void genNullPointerException(){
-        
+
     }
 }
