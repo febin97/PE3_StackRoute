@@ -42,7 +42,7 @@ public class StudentMarksTest {
     }
     @Test
     public void checkVaildGrades_InCorrectInput_ReturnNull(){
-        student.setNumOfStudents(4);
+        student.setNumOfStudents(3);
         int[] testArr = {2,3,1,1};
         student.setStuGrades(testArr);
         assertNull(student.checkValidGrades());
